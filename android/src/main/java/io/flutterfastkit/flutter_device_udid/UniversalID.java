@@ -17,10 +17,12 @@ import java.util.UUID;
 public class UniversalID {
 
     private static String filePath = File.separator + "flutter_device_udid" + File.separator + "UUID";
-
+    /*
     private static String[] PERMISSIONS_STORAGE = {
             "android.permission.READ_EXTERNAL_STORAGE",
             "android.permission.WRITE_EXTERNAL_STORAGE"};
+    */
+    private static String[] PERMISSIONS_STORAGE = {"android.permission.READ_EXTERNAL_STORAGE"};
 
     /**
      * 检查是否有读写权限
