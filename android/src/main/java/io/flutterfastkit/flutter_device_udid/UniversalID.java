@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public class UniversalID {
 
-    private static String filePath = File.separator + "flutter_device_udid" + File.separator + "UUID";
+    private static String filePath = File.separator + "flutter_longma_device_udid" + File.separator + "UUID";
     /*
     private static String[] PERMISSIONS_STORAGE = {
             "android.permission.READ_EXTERNAL_STORAGE",
