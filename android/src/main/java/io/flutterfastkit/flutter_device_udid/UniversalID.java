@@ -7,7 +7,7 @@ import android.os.Environment;
 import android.provider.Settings;
 
 import androidx.core.content.ContextCompat;
-
+import android.util.Log;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -56,6 +56,8 @@ public class UniversalID {
                 if (uuid == null || uuid.equals("")) {
                     androidId = "" + Settings.Secure.getString(context.getContentResolver(),
                             Settings.Secure.ANDROID_ID);
+
+                    Log.d("android_id", androidId);
                     try {
                         if (!"9774d56d682e549c".equals(androidId)) {
                             uuid = UUID.nameUUIDFromBytes(androidId.getBytes("utf8")).toString();
